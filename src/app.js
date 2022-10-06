@@ -46,7 +46,7 @@ function updateMessages(serverMessages) {
 
 function request() {
   const response$ = ajax({
-    url: 'http://localhost:8080/messages/unread',
+    url: 'https://sleepy-forest-93902.herokuapp.com/messages/unread',
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
