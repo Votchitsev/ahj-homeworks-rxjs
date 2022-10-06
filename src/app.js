@@ -46,7 +46,7 @@ function updateMessages(serverMessages) {
 
 function request() {
   const response$ = ajax({
-    url: 'https://sleepy-forest-93902.herokuapp.com/messages/unread',
+    url: 'https://sleepy-forest-93902.herokuapp.com/messages/unrea',
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function request() {
       const messages = value.filter((message) => !messagesId.includes(message.id));
       updateMessages(messages);
     },
-    error: (err) => console.log(err),
+    error: () => updateMessages([]),
   });
 }
 
