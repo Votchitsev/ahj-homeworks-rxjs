@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: aquamarine;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: white;
+  margin: 200px auto;
+  box-shadow: 0 0 11px 0;
+  height: 80vh;
+  align-items: center;
+}
+
+.message-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  margin: 5px;
+  background-color: rgb(232, 223, 223);
+}
+
+.message-from {
+  padding: 15px;
+  width: 25%;
+}
+
+.message-subject {
+  width: 50%;
+  padding: 15px;
+}
+
+.message-time {
+  width: 25%;
+  padding: 15px;
+}
+
+h1 {
+  padding: 20px;
+  align-self: flex-start;
+}
